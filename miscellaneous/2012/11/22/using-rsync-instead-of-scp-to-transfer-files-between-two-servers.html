@@ -60,8 +60,7 @@
         <section class="post-content">
             <p>SCP is a great tool for transfering files using ssh protocol. I had been using it for transfering files from one server to another for a long time. But recently I had been working on a few servers, with very unstable connectivity. The connection had been breaking half way through the transfer. One of the problems with SCP is that you cannot resume a file transfer that got interrupted halfway. So I use rsync for this purpose. Following is an expample</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">rsync --partial --progress --rsh<span class="o">=</span><span class="s1">&#39;ssh -p 1234&#39;</span> joe@example.com:/home/joe/latest.zip .
-<span class="o">[</span>/sourcecode<span class="o">]</span></code></pre></div>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">rsync --partial --progress --rsh<span class="o">=</span><span class="s1">&#39;ssh -p 1234&#39;</span> joe@example.com:/home/joe/latest.zip .</code></pre></div>
 
         </section>
 
